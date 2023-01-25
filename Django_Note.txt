@@ -1,0 +1,44 @@
+# Pre-requesites
+
+# Python
+# Django Framework - www.djangoproject.com
+# Download from - www.pypi.org (pypi - python package index)
+# Install using PIP - pip install django (pip - python installer package)
+# Virtual Environment
+
+# Django is based on MVT architecture
+# MVT -> Model - View - Template
+
+# Setup Virtual Environment
+#1. python -m venv env_name - Create virtual environment
+#2. source env_name/Scripts/activate - Activate virtual environment
+#3. deactivate - Deactivate virtual environment
+#4. install required package in virtual environment using pip.
+#5. collect all dependecy libraries from environment -> pip freeze -> requirements.txt
+
+#6. install all requirements from requirements.txt
+
+## pip install -r requirements.txt
+
+# Django Management Commands
+
+#1. django-admin startproject project_name .
+#2. django-admin startapp app_name
+#3. python manage.py makemigrations - collect custom models/db tables schema
+#4. python manage.py migrate - apply all migrations to database.
+#5. python manage.py createsuperuser - username, email, password, re-password
+#6. python manage.py runserver - default IP 127.0.0.1:8000/localhost:8000
+#7. CTRL+C - break/close the server
+
+####################################################
+##      PROJECT_FOLDER    ##    APP_FOLDER       ##
+##      --------------    ##   --------------
+##      settings.py       ##    admin.py
+##      urls.py        ---<<--- urls.py (create) (3)
+##      asgi.py           ##    models.py (2)
+##      wsgi.py           ##    views.py (1)
+
+# 1. add your app to INSTALLED_APPS in settings.py
+# 2. Write a view in your app's views.py
+# 3. Create a urls.py to manage all urls of your app.
+# 4. connect your app's urls.py with project's urls.py
